@@ -1,0 +1,9 @@
+<launch>
+
+    <!-- Setup node for sending fake path to follow -->
+    <node pkg="virat_fake" name="fake_path_planner" type="fake_path" output="screen"/>
+
+    <!-- launch path visualizer for rviz -->
+    <include file="$(find virat_fake)/launch/mark_paths_rviz.launch" />
+
+</launch>
