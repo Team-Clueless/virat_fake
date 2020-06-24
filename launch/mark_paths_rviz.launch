@@ -15,8 +15,8 @@
         <!-- Setup args to pass to node -->
         <arg name="path_topic" value="/virat/controller/output/path"/>
         <arg name="visualizer_topic" value="/visualize/path/mpc"/>
-        <arg name="point_color_rgba" value="'255 0 0 1.0'"/>
-        <arg name="line_color_rgba" value="'1.0 0.0 0 0.8'"/>
+        <arg name="point_color_rgba" value="'0 0 255 0.0'"/>
+        <arg name="line_color_rgba" value="'0.0 0.0 1.0 0.8'"/>
 
         <!-- Setup node for sending fake path to follow -->
         <node pkg="virat_fake" name="mpc_path_visualizer" type="visualize_path_rviz.py" output="screen" args="$(arg path_topic) $(arg visualizer_topic) $(arg point_color_rgba) $(arg line_color_rgba)" />

@@ -29,7 +29,8 @@ public:
 
         for (int i = 0; i < 10; i++)
         {
-            ys[i] = msg->state_vars.y - inc * i;
+            xs[i] = i * i * 0.1;
+            ys[i] = 10 - inc * i;
         }
 
         this->fake_path.x_vals = xs;
